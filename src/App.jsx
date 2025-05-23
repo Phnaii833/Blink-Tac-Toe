@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import GameSetup from './components/GameSetup';
-import GameBoard from './components/GameBoard';
+import GameSetup from './components/GameSetup/GameSetup';
+import GameBoard from './components/GameBoard/GameBoard';
 import HelpModal from './components/Modals/HelpModal';
 import WinnerModal from './components/Modals/WinnerModal';
 import useGameLogic from './hooks/useGameLogic';
@@ -28,7 +28,7 @@ const App = () => {
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex flex-col items-center justify-center py-8 px-4">
       <div className="max-w-6xl w-full mx-auto">
         <header className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">Vanishing Emoji Tic Tac Toe</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">Blink Tac Toe</h1>
           <p className="text-gray-600">A magical twist on the classic game!</p>
         </header>
 

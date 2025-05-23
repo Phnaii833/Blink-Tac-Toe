@@ -1,6 +1,5 @@
 import React from 'react';
-import { emojiCategories } from './gameData';
-import PropTypes from 'prop-types';
+import { emojiCategories } from '../../utils/gameData';
 
 const GameSetup = ({
   player1Category,
@@ -115,15 +114,6 @@ const GameSetup = ({
       </div>
     </div>
   );
-};
-
-GameSetup.propTypes = {
-  player1Category: PropTypes.string,
-  player2Category: PropTypes.string,
-  setPlayer1Category: PropTypes.func.isRequired,
-  setPlayer2Category: PropTypes.func.isRequired,
-  setGameStarted: PropTypes.func.isRequired,
-  setShowHelp: PropTypes.func.isRequired
 };
 
 export default GameSetup;

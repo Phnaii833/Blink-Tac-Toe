@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { emojiCategories, winningCombinations } from '../components/gameData.js';
-
+import { emojiCategories, winningCombinations } from '../utils/gameData';
 
 const useGameLogic = (player1Category, player2Category) => {
   const [board, setBoard] = useState(Array(9).fill(null));

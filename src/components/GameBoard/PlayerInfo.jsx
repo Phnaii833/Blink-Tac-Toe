@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const PlayerInfo = ({
   currentPlayer,
@@ -41,13 +40,6 @@ const PlayerInfo = ({
       </div>
     </div>
   );
-};
-
-PlayerInfo.propTypes = {
-  currentPlayer: PropTypes.oneOf([1, 2]).isRequired,
-  winner: PropTypes.number,
-  player1Category: PropTypes.string.isRequired,
-  player2Category: PropTypes.string.isRequired
 };
 
 export default PlayerInfo;
