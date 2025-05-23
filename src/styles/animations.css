@@ -1,0 +1,58 @@
+@keyframes bounceIn {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes winningPulse {
+  0% { background-color: rgba(252, 211, 77, 0.3); }
+  50% { background-color: rgba(252, 211, 77, 0.6); }
+  100% { background-color: rgba(252, 211, 77, 0.3); }
+}
+
+.bounce-in {
+  animation: bounceIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.shake-animation {
+  animation: shake 0.3s ease-in-out;
+}
+
+.winning-cell {
+  animation: winningPulse 1.5s infinite;
+  border: 2px solid #fbbf24;
+}
+
+.vanished-cell {
+  position: relative;
+  overflow: hidden;
+}
+
+.game-cell {
+  transition: all 0.3s ease;
+  min-height: 100px;
+}
+
+.game-cell:hover:not(.vanished-cell):not(.winning-cell) {
+  transform: translateY(-2px);
+}
+
+.emoji-content {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
